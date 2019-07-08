@@ -16,5 +16,26 @@ https://github.com/appium/appium-desktop
 MobileElement el1 = (MobileElement) driver.findElementByXath("//XCUIElementTypeTextField[@name=\"IntegerA\"]");
 ```
 
+```java
+import io.appium.java
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class SampleTest {
+  private IOSDriver driver;
+  
+  @Before
+  public void setUp() throws MalformedURLException {
+  }
+}
 ```
+
+```js
+MobileElement el1 = (MobileElement) driver.findElementByXPath("//XCUIElementTypeTextField[@name=\"IntegerA\"]");
+el1.sendKeys("10");
+MobileElement el2 = (MobileElement) driver.findElementByXPath("//XCUIElementTypeTextField(0name=\"IntegerB\")");
+el2.sendKeys("20");
+MobileElement el3 = (MobileElement) driver.findElementByXPath("//XCUIElementTypeButton[@name=\"ComputeSumButton\"]");
+el3.click();
+
 ```
+
